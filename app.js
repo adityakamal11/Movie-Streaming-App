@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const s3 = new S3Client({ region: 'ap-south-1' });
+const s3 = new S3Client({ region: 'us-east-1' });
 
 const db = mysql.createConnection({
   host: process.env.DB_HOST || 'mysql-db',
@@ -66,7 +66,7 @@ const upload = multer({
 // Helper function to upload files to S3
 const uploadToS3 = async (fileBuffer, fileName, contentType) => {
   const uploadParams = {
-    Bucket: 'moviebucketsudhanshuvlog',
+    Bucket: 'moviebucketsudhanshuvlog1',
     Key: fileName,
     Body: fileBuffer,
     ContentType: contentType,

@@ -6,10 +6,9 @@ on:
   #      - main
   pull_request:
     branches: ["main"]
-     paths-ignore:
+    paths-ignore:
       - 'README.md'
-#Chnanges done
-
+      
 jobs:
   sonarqubeanalysis:
     name: Build and analyze

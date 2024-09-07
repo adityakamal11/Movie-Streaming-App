@@ -10,7 +10,7 @@ on:
       - 'README.md'
 
 
-jobs:
+  jobs:
   sonarqubeanalysis:
     name: Build and analyze
     runs-on: ubuntu-latest

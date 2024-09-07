@@ -22,7 +22,7 @@ services:
     image: jinny1/movie-streaming-frontend:latest
     container_name: web
     environment:
-      API_URL: 34.224.27.46
+      API_URL: 34.224.27.46/32
     ports:
       - "80:80"
 

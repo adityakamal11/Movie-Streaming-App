@@ -5,13 +5,13 @@ services:
     image: adityakamal11/movie-streaming-app-backend-nodejs:latest
     container_name: node-app
     environment:
-      DB_HOST: 34.224.27.46/32
+      DB_HOST: 34.224.27.46
       DB_USER: admin
       DB_PASSWORD: redhat
       DB_NAME: movie_db
       AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
       AWS_SECRET_ACCESS_KEY:  ${AWS_SECRET_ACCESS_KEY}
-      AWS_REGION: ap-south-1
+      AWS_REGION: us-east-1
     ports:
       - "3000:3000"
     depends_on:
@@ -22,7 +22,7 @@ services:
     image: adityakamal11/movie-streaming-app-frontend:latest
     container_name: web
     environment:
-      API_URL: 34.224.27.46/32
+      API_URL: 34.224.27.46
     ports:
       - "80:80"
 

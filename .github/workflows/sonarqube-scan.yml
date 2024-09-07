@@ -6,9 +6,8 @@ on:
   #      - main
   pull_request:
     branches: ["main"]
-     paths-ignore:
+    paths-ignore:
       - 'README.md'
-
 
 jobs:
   sonarqubeanalysis:
@@ -57,7 +56,6 @@ jobs:
           context: .
           file: ./Dockerfile
           tags: adityakamal11/movie-streaming-app-backend-nodejs:latest
-
       -
         name: Build and push frontend dockerfile
         uses: docker/build-push-action@v6

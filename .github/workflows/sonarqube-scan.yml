@@ -6,11 +6,10 @@ on:
   #      - main
   pull_request:
     branches: ["main"]
-     paths-ignore:
+    paths-ignore:
       - 'README.md'
 
-
-  jobs:
+jobs:
   sonarqubeanalysis:
     name: Build and analyze
     runs-on: ubuntu-latest

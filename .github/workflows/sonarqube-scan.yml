@@ -6,9 +6,8 @@ on:
   #      - main
   pull_request:
     branches: ["main"]
-     paths-ignore:
+    paths-ignore:
       - 'README.md'
-# Changes
 
 jobs:
   sonarqubeanalysis:

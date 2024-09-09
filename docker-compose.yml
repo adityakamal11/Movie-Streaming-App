@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   node-app:
-    image: adityakamal11/movie-streaming-app-frontend:latest
+    image: adityakamal11/movie-streaming-app-backend-nodejs:latest
     container_name: node-app
     environment:
       DB_HOST: 34.224.27.46
@@ -22,7 +22,7 @@ services:
     image: adityakamal11/movie-streaming-app-frontend:latest
     container_name: web
     environment:
-      API_URL: 34.224.27.46/32
+      API_URL: 34.224.27.46
     ports:
       - "80:80"
 
